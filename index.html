@@ -91,7 +91,17 @@
             }
 
         });
-
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowUp') {
+                cube.position.y += 0.1;
+            } else if (event.key === 'ArrowDown') {
+                cube.position.y -= 0.1;
+            } else if (event.key === 'ArrowLeft' || event.key === 'a' || event.key === 'A') {
+                cube.position.x -= 0.1;
+            } else if (event.key === 'ArrowRight' || event.key === 'd' || event.key === 'D') {
+                cube.position.x += 0.1;
+    }
+});
         // ✅ render loop
         function animate(t) {
             cube.scale.x = 2;
