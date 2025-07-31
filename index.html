@@ -79,17 +79,17 @@
         // คุมด้วยคีย์บอร์ด
         window.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowUp') {
-                bed_mesh.position.y += 0.1; // เดิม: ขยับขึ้น (แนว y)
+                bed_mesh.position.y += 0.1; 
             } else if (event.key === 'ArrowDown') {
-                bed_mesh.position.y -= 0.1; // เดิม: ขยับลง (แนว y)
+                bed_mesh.position.y -= 0.1;  
             } else if (event.key === 'ArrowLeft' || event.key === 'a' || event.key === 'A') {
-                bed_mesh.position.x -= 0.1; // เดิม: ไปทางซ้าย
+                bed_mesh.position.x -= 0.1;  
             } else if (event.key === 'ArrowRight' || event.key === 'd' || event.key === 'D') {
-                bed_mesh.position.x += 0.1; // เดิม: ไปทางขวา
+                bed_mesh.position.x += 0.1; 
             } else if (event.key === 'w' || event.key === 'W') {
-                bed_mesh.position.z -= 0.1; // ✅ ใหม่: ขยับไปด้านหน้า (ขึ้นบนจอ)
+                bed_mesh.position.z -= 0.1; 
             } else if (event.key === 's' || event.key === 'S') {
-                bed_mesh.position.z += 0.1; // ✅ ใหม่: ถอยหลัง (ลงล่างจอ)
+                bed_mesh.position.z += 0.1;  
             }
         });
 
